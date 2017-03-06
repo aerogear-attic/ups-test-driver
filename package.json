@@ -14,13 +14,13 @@
   "license": "Apache",
   "dependencies": {
     "async": "^2.1.4",
-    "fast-csv": "^2.3.1",
+    "fast-csv": "^2.4.0",
     "unifiedpush-admin-client": "^0.5.0",
     "unifiedpush-node-sender": "^0.15.0",
     "yargs": "^6.6.0"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
+    "eslint": "^3.17.0",
     "istanbul": "^0.4.5",
     "jasmine": "^2.5.3"
   },
