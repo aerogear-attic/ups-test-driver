@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A test driver in nodeJS that send notification requests to a standalone UPS",
   "scripts": {
+    "pretest": "node_modules/.bin/eslint app spec --fix",
     "test": "node_modules/.bin/istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
   "repository": {

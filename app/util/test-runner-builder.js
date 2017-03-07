@@ -10,7 +10,7 @@ class TestRunnerBuilder {
         this.args = args;
     }
 
-    buildTesstRunners() {
+    buildTestRunners() {
         const testRunnerType = this.getTestRunnerType(this.args);
 
         const testRunners = [];
