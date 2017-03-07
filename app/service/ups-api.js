@@ -12,7 +12,7 @@ const Options = require("../model/options");
 class UPSAPI {
 
     constructor(args) {
-        this.endpoint = args.endpoint;
+        this.endPoint = args.endPoint;
         this.username = args.username;
         this.password = args.password;
         this.pushApplicationID = args.pushApplicationID;
@@ -30,7 +30,7 @@ class UPSAPI {
             password: this.password
         };
 
-        return adminClient(this.endpoint, settings);
+        return adminClient(this.endPoint, settings);
     }
 
     sendNotificationToAllDevicesOfApp(app) {
@@ -43,7 +43,7 @@ class UPSAPI {
 
     getSenderClient() {
         const settings = {
-            url: this.endpoint,
+            url: this.endPoint,
             applicationId: this.pushApplicationID,
             masterSecret: this.masterSecret
         };

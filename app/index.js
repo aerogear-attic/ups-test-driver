@@ -6,8 +6,7 @@ const TestRunnerController = require("./util/test-runner-controller");
 
 const args = CommandLineParserBuilder.buildCommandLineParser();
 
-const testRunners = new TestRunnerBuilder(args).buildTesstRunners();
+const testRunners = new TestRunnerBuilder(args).buildTestRunners();
 
 new TestRunnerController(args, testRunners)
-    .start()
-    .then(() => console.log("end?"));
+    .start();

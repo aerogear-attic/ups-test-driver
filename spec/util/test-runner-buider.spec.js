@@ -57,7 +57,7 @@ describe("TestRunnerBuilder", () => {
     describe(".buildTestRunners", () => {
 
         it("should create an array", () => {
-            const testRunners = testRunnerBuilder.buildTesstRunners();
+            const testRunners = testRunnerBuilder.buildTestRunners();
 
             expect(Array.isArray(testRunners)).toBeTruthy();
         });
@@ -65,7 +65,7 @@ describe("TestRunnerBuilder", () => {
         it("should create an array with as many TestRunner as 'instances' value", () => {
             const instances = 3;
             args.instances = instances;
-            const testRunners = testRunnerBuilder.buildTesstRunners();
+            const testRunners = testRunnerBuilder.buildTestRunners();
 
             expect(testRunners.length).toBe(instances);
             expect(testRunners.every(tR => tR instanceof TestRunner)).toBeTruthy();

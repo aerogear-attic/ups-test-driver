@@ -71,10 +71,6 @@ class CommandLineParserBuilder {
             throw new Error("Instances (-i) must be a positive integer");
         }
 
-        if (!parseInt(args.instances) || parseInt(args.instances) <= 0) {
-            throw new Error("Instances (-i) must be a positive integer");
-        }
-
         if (args.username && !args.password
             || !args.username && args.password) {
             throw new Error("If username is provided, a password is also needed");

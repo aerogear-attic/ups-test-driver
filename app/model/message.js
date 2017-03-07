@@ -9,7 +9,6 @@ class Message {
         this.priority = DEFAULT_MESSAGE_PRIORITY;
         this.sound = DEFAULT_MESSAGE_SOUND;
         this.badge;
-        this.simplePush;
         this.userData;
         this.apns;
         this.windows;
