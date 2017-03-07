@@ -1,0 +1,31 @@
+{
+  "name": "ups-test-driver",
+  "version": "1.0.0",
+  "description": "A test driver in nodeJS that send notification requests to a standalone UPS",
+  "scripts": {
+    "test": "node_modules/.bin/istanbul cover node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerogear/ups-test-driver.git"
+  },
+  "bin": "./app/index.js",
+  "author": "Aerogear team",
+  "license": "Apache",
+  "dependencies": {
+    "async": "^2.1.4",
+    "fast-csv": "^2.4.0",
+    "unifiedpush-admin-client": "^0.5.0",
+    "unifiedpush-node-sender": "^0.15.0",
+    "yargs": "^6.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/aerogear/ups-test-driver.git/issues"
+  },
+  "homepage": "https://github.com/aerogear/ups-test-driver.git#readme"
+}
