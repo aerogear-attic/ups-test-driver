@@ -18,7 +18,7 @@ class TestRunnerApp extends TestRunner {
         forEachAsyncWithInterval(apps, app => {
             console.log(`Sending message to all devices of "${app.name}" [${app.pushApplicationID}] after ${Date.now() - startTime}`);
             this.upsapi.sendNotificationToApp(app)
-                .then(res => console.log(`[${app.name}] RESPONSE: ${res.statusCode} - ${res.body.error || res.body}`))
+                .then(res => console.log(`[${app.name}] RESPONSE: ${res}`))
                 .catch(err => console.log(`[${app.name}] ERROR: ${err}`));
         }, this.delay);
     }

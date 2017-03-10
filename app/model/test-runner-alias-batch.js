@@ -14,7 +14,7 @@ class TestRunnerAliasBatch extends TestRunner {
         console.log(`Sending notification to ${aliases.length} aliases in a single batch`);
 
         this.upsapi.sendNotificationToAliasesUsingBatchFeature(aliases)
-            .then(res => console.log(`RESPONSE: ${res.statusCode} - ${res.body.error || res.body}`))
+            .then(res => console.log(`RESPONSE: ${res}`))
             .catch(err => console.log(`ERROR: ${err}`));
     }
 }

@@ -18,7 +18,7 @@ class TestRunnerAliasSingle extends TestRunner {
         forEachAsyncWithInterval(aliases, alias => {
             console.log(`Sending notification to ${alias} after ${Date.now() - startTime} ms.`);
             this.upsapi.sendNotificationToAlias(alias)
-                .then(res => console.log(`[${alias}] RESPONSE: ${res.statusCode} - ${res.body.error || res.body}`))
+                .then(res => console.log(`[${alias}] RESPONSE: ${res}`))
                 .catch(err => console.log(`[${alias}] ERROR: ${err}`));
         }, this.delay);
     }
